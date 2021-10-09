@@ -4,10 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Juan/AndroidStudioProjects/Sqlite_01/app/src/main/res/layout/activity_main.xml" value="0.30925925925925923" />
+        <entry key="..\:/Users/johhn/AndroidStudioProjects/Sqlite_01/app/src/main/res/layout/activity_main.xml" value="0.24074074074074073" />
+        <entry key="..\:/Users/johhn/AndroidStudioProjects/Sqlite_01/app/src/main/res/layout/card_departamentos.xml" value="0.24074074074074073" />
+        <entry key="..\:/Users/johhn/AndroidStudioProjects/Sqlite_01/app/src/main/res/layout/card_municipios.xml" value="0.24074074074074073" />
+        <entry key="..\:/Users/johhn/AndroidStudioProjects/Sqlite_01/app/src/main/res/layout/contenido_principal.xml" value="0.24074074074074073" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
