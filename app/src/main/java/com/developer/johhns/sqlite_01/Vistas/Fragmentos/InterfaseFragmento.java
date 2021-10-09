@@ -11,8 +11,6 @@ import java.util.ArrayList;
 
 public interface InterfaseFragmento {
 
-    //private Type tipo = new TypeToken<T>() {}.getType();
-
     public void generarLayout();
 
     public AdaptadorDepartamentos crearAdaptador(Cursor cusor);
