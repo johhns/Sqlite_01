@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sqlite_01">
         <activity
+            android:name=".Vistas.DepartamentosActivity"
+            android:parentActivityName=".Vistas.MainActivity"
+            android:exported="true" />
+        <activity
             android:name=".Vistas.MainActivity"
             android:exported="true">
             <intent-filter>

@@ -25,8 +25,9 @@ public class DB_DML extends BaseDatos {
 
     public Cursor  obtenerDepartamentos(){
         String         consulta = "SELECT NUMDPT , NOMBRE FROM GEN_DEPARTAMENTOS ORDER BY NUMDPT" ;
-        SQLiteDatabase cursor = getReadableDatabase();
+        SQLiteDatabase cursor = this.getReadableDatabase();
         return cursor.rawQuery( consulta , null ) ;
     }
+
 
 }

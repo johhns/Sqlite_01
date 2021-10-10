@@ -5,6 +5,9 @@ public class Departamentos {
     private int    numdpt ;
     private String nombre ;
 
+    public Departamentos() {
+    }
+
     public Departamentos(int numdpt, String nombre) {
         this.numdpt = numdpt;
         this.nombre = nombre;
