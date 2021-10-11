@@ -4,6 +4,9 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class DB_DML extends BaseDatos {
 
@@ -20,7 +23,13 @@ public class DB_DML extends BaseDatos {
         ContentValues datos = new ContentValues() ;
         datos.put("NUMDPT",codigo);
         datos.put("NOMBRE",nombre);
-        db.insertarRegistros( "GEN_DEPARTAMENTOS" , datos);
+        try {
+            db.insertarRegistros( "GEN_DEPARTAMENTOS" , datos);
+        }
+        catch ( Exception e ) {
+            Toast.makeText(contexto , e.getMessage().toString() , Toast.LENGTH_LONG).show();
+        }
+
     }
 
     public Cursor  obtenerDepartamentos(){

@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sqlite_01">
         <activity
-            android:name=".Vistas.DepartamentosActivity"
+            android:name=".Vistas.NuevoDepto"
             android:parentActivityName=".Vistas.MainActivity"
             android:exported="true" />
+        <activity
+            android:name=".Vistas.DepartamentosActivity"
+            android:exported="true"
+            android:parentActivityName=".Vistas.MainActivity" />
         <activity
             android:name=".Vistas.MainActivity"
             android:exported="true">

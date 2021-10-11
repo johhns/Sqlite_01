@@ -24,9 +24,11 @@ public class AdaptadorDepartamentos extends RecyclerView.Adapter<AdaptadorDepart
         this.contexto = contexto;
         this.dml      = new DB_DML( contexto ) ;
 
+        /*
         dml.insertarDepartamento( 1 , "San Salvador" );
         dml.insertarDepartamento( 2 , "Santa Ana" );
         dml.insertarDepartamento( 3 , "La Paz" );
+        */
 
         this.cursor   = dml.obtenerDepartamentos() ;
     }

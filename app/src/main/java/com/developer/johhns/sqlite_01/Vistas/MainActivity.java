@@ -11,7 +11,7 @@ import com.developer.johhns.sqlite_01.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnDeptos, btnMunicipios ;
+    Button btnDeptos, btnMunicipios , btnNuevoDepto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnNuevoDepto = findViewById( R.id.btnNuevoDepto ) ;
+        btnNuevoDepto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity( new Intent( view.getContext() , NuevoDepto.class ) );
+            }
+        });
 
     }
 }
