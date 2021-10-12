@@ -32,6 +32,10 @@ public class DB_DML extends BaseDatos {
 
     }
 
+    public void eliminarDepartamentos(){
+        db.eliminarRegistros("GEN_DEPARTAMENTOS","1=1", null);
+    }
+
     public Cursor  obtenerDepartamentos(){
         String         consulta = "SELECT NUMDPT , NOMBRE FROM GEN_DEPARTAMENTOS ORDER BY NUMDPT" ;
         SQLiteDatabase cursor = this.getReadableDatabase();
