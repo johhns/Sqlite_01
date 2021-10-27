@@ -11,7 +11,7 @@ public class Http_Util {
     private static Http_Util instancia ;
     private RequestQueue mPeticion ;
 
-    public static final String URL_DEPTOS = "http://appserver.iea.com.sv/wsag/Sag_HH_Util.Sincronizar_Departamentos" ;
+    public static final String URL_DEPTOS = "https://appserver.iea.com.sv/wsag/Sag_HH_Util.Sincronizar_Departamentos" ;
     public static final String URL_MUNICIPIOS = "http://appserver.iea.com.sv/wsag/Sag_HH_Util.Sincronizar_Municipios" ;
 
     private Http_Util( Context contexto ){

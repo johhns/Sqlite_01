@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.database.Cursor;
 import android.os.Bundle;
+import android.widget.LinearLayout;
 
 import com.developer.johhns.sqlite_01.Adaptadores.AdaptadorDepartamentos;
 import com.developer.johhns.sqlite_01.R;
@@ -20,9 +21,12 @@ public class DepartamentosActivity extends AppCompatActivity implements Interfas
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_departamentos);
 
+        LinearLayoutManager layout = new LinearLayoutManager(this);
+
+
         recyclerView = findViewById(R.id.recViewDepto) ;
         recyclerView.setAdapter( new AdaptadorDepartamentos(this) );
-        recyclerView.setLayoutManager( new LinearLayoutManager(this));
+        recyclerView.setLayoutManager( layout  );
 
     }
 
